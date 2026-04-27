@@ -1,0 +1,20 @@
+{
+  "sections": {
+    "sagar_template_1": {
+      "type": "custom-hero",
+      "settings": {
+        "heading": "I Tried Drugstore Plumpers...",
+        "subtext": "Then I found the one treatment...",
+        "rating_text": "1,397 · Over 2 Million Sold",
+        "button_label": "DISCOVER WHAT WORKED"
+      }
+    },
+    "sagar_story": {
+  "type": "sagar_template_2"
+}
+  },
+  "order": [
+    "sagar_template_1",
+    "gar_story"
+  ]
+}
