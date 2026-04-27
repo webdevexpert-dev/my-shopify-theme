@@ -1,0 +1,186 @@
+<section class="sagar-story">
+  <div class="page-width">
+
+    {% if section.settings.heading != blank %}
+      <h2 class="story-heading">{{ section.settings.heading }}</h2>
+    {% endif %}
+
+    {% if section.settings.intro != blank %}
+      <p class="story-text">{{ section.settings.intro }}</p>
+    {% endif %}
+
+    {% if section.settings.text_1 != blank %}
+      <p class="story-text">{{ section.settings.text_1 }}</p>
+    {% endif %}
+
+    {% if section.settings.text_2 != blank %}
+      <p class="story-text">{{ section.settings.text_2 }}</p>
+    {% endif %}
+
+    <!-- NEGATIVE POINTS -->
+    <div class="story-list">
+      {% for block in section.blocks %}
+        <div class="story-item">
+          ❌ {{ block.settings.point }}
+        </div>
+      {% endfor %}
+    </div>
+
+    {% if section.settings.text_3 != blank %}
+      <p class="story-text">{{ section.settings.text_3 }}</p>
+    {% endif %}
+
+    {% if section.settings.text_4 != blank %}
+      <p class="story-text">{{ section.settings.text_4 }}</p>
+    {% endif %}
+
+    {% if section.settings.text_5 != blank %}
+      <p class="story-text">{{ section.settings.text_5 }}</p>
+    {% endif %}
+
+    {% if section.settings.button_label != blank %}
+      <div class="story-btn-wrap">
+        <a href="{{ section.settings.button_link }}" class="story-btn">
+          {{ section.settings.button_label }}
+        </a>
+      </div>
+    {% endif %}
+
+  </div>
+</section>
+
+<style>
+.sagar-story {
+  padding: 80px 20px;
+  text-align: center;
+  background: #f7f7f7;
+}
+
+.story-heading {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.story-text {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 15px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.story-list {
+  margin: 25px 0;
+}
+
+.story-item {
+  color: #c0392b;
+  font-size: 15px;
+  margin-bottom: 8px;
+}
+
+.story-btn-wrap {
+  margin-top: 25px;
+}
+
+.story-btn {
+  display: inline-block;
+  padding: 14px 28px;
+  background: #0d2b45;
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+.story-btn:hover {
+  background: #000;
+}
+</style>
+
+{% schema %}
+{
+  "name": "Sagar Story Section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "My Struggle With Thin, Dry Lips"
+    },
+    {
+      "type": "textarea",
+      "id": "intro",
+      "label": "Intro Text",
+      "default": "Hi, I'm Cheri. 👋"
+    },
+    {
+      "type": "textarea",
+      "id": "text_1",
+      "label": "Text 1",
+      "default": "I've always had thin, dry lips..."
+    },
+    {
+      "type": "textarea",
+      "id": "text_2",
+      "label": "Text 2",
+      "default": "I wasn't interested in spending $600+..."
+    },
+    {
+      "type": "textarea",
+      "id": "text_3",
+      "label": "Text 3",
+      "default": "I was about to give up completely."
+    },
+    {
+      "type": "textarea",
+      "id": "text_4",
+      "label": "Text 4",
+      "default": "Then I came across City Lips."
+    },
+    {
+      "type": "textarea",
+      "id": "text_5",
+      "label": "Text 5",
+      "default": "Here's why this $35 treatment succeeded..."
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Button Label",
+      "default": "TRY IT RISK-FREE"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button Link"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "point",
+      "name": "Negative Point",
+      "settings": [
+        {
+          "type": "text",
+          "id": "point",
+          "label": "Point",
+          "default": "They all stung like crazy"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Sagar Story Section",
+      "category": "Custom",
+      "blocks": [
+        { "type": "point" },
+        { "type": "point" },
+        { "type": "point" }
+      ]
+    }
+  ]
+}
+{% endschema %}
