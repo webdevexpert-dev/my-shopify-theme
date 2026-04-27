@@ -12,27 +12,15 @@
     "sagar_template_1": {
       "type": "custom-hero",
       "settings": {
-        "image": "shopify://shop_images/1772749223371-bZqKFd9o-image-gen.webp",
         "rating_text": "1,397 · Over 2 Million Sold",
         "heading": "I Tried Drugstore Plumpers...",
         "subtext": "Then I found the one treatment...",
-        "button_label": "DISCOVER WHAT WORKED",
-        "button_link": ""
+        "button_label": "DISCOVER WHAT WORKED"
       }
     },
     "sagar_story": {
       "type": "sagar_template_2",
-      "settings": {
-        "heading": "My Struggle With Thin, Dry Lips",
-        "intro": "Hi, I'm Cheri. 👋",
-        "text_1": "I've always had thin, dry lips...",
-        "text_2": "I wasn't interested in spending $600+...",
-        "text_3": "I was about to give up completely.",
-        "text_4": "Then I came across City Lips.",
-        "text_5": "Here's why this $35 treatment succeeded...",
-        "button_label": "TRY IT RISK-FREE",
-        "button_link": ""
-      }
+      "settings": {}
     }
   },
   "order": [
