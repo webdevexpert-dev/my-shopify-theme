@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "hero_jVaWmY": {
@@ -57,6 +66,7 @@
         "custom_mobile_media": false,
         "media_type_1_mobile": "image",
         "media_type_2_mobile": "image",
+        "link": "",
         "open_in_new_tab": false,
         "content_direction": "column",
         "vertical_on_mobile": true,
@@ -78,6 +88,25 @@
         "reflection_opacity": 75,
         "padding-block-start": 100,
         "padding-block-end": 72
+      }
+    },
+    "custom_services": {
+      "type": "custom-services",
+      "blocks": {
+        "service_tyL9nx": {
+          "type": "service",
+          "settings": {
+            "icon": "shopify://shop_images/Main_b13ad453-477c-4ed1-9b43-81f3345adfd6.jpg",
+            "title": "Service Title",
+            "text": "Write short description here"
+          }
+        }
+      },
+      "block_order": [
+        "service_tyL9nx"
+      ],
+      "settings": {
+        "heading": "Our Services"
       }
     },
     "product_list_fa6P9H": {
@@ -273,13 +302,7 @@
         "padding-block-start": 48,
         "padding-block-end": 48
       }
-    },
-    "custom_services": {
-  "type": "custom-services",
-  "settings": {
-    "heading": "Our Services"
-  }
-}
+    }
   },
   "order": [
     "hero_jVaWmY",
