@@ -10,11 +10,11 @@
       }
     },
     "sagar_story": {
-  "type": "sagar_template_2"
-}
+      "type": "sagar_template_2"
+    }
   },
   "order": [
     "sagar_template_1",
-    "gar_story"
+    "sagar_story"
   ]
 }
